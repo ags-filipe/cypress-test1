@@ -18,7 +18,8 @@ describe('Search', () => {
         cy.get('[id="lot-81bd2a36-2156-4a1d-acae-ae3b00f6293b"]')
             .find('[class=featured-lot-text]').should('exist')
             .invoke('text')
-            .should('equal', 'Featured lot')
+            .should('equal', 'Featured lot');
+        cy.get('[id="lot-81bd2a36-2156-4a1d-acae-ae3b00f6293b"]')
             .find('[class=lot-title]')
             .invoke('text')
             .should('equal', 'ANTIQUE FRENCH SAPPHIRE & DIAMOND BANGLE')
